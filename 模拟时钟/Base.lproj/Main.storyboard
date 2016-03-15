@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xO7-pk-UIs">
+                                <rect key="frame" x="0.0" y="387" width="375" height="280"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="00" translatesAutoresizingMaskIntoConstraints="NO" id="uvW-dD-RRI">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+                                        <animations/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIw-ys-lMf">
+                                        <rect key="frame" x="126" y="117" width="79" height="32"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uvW-dD-RRI" secondAttribute="trailing" id="JBe-eA-ynu"/>
+                                    <constraint firstAttribute="bottom" secondItem="uvW-dD-RRI" secondAttribute="bottom" id="Ops-el-oag"/>
+                                    <constraint firstAttribute="height" constant="280" id="diu-I0-soD"/>
+                                    <constraint firstItem="uvW-dD-RRI" firstAttribute="leading" secondItem="xO7-pk-UIs" secondAttribute="leading" id="gCo-Md-LGE"/>
+                                    <constraint firstItem="uvW-dD-RRI" firstAttribute="top" secondItem="xO7-pk-UIs" secondAttribute="top" id="lK9-DH-Y2f"/>
+                                </constraints>
+                            </view>
+                            <datePicker clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="erb-BW-xzM">
+                                <rect key="frame" x="0.0" y="327" width="375" height="60"/>
+                                <animations/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="woU-Ja-MRz"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="474002164.644041">
+                                    <!--2016-01-09 03:16:04 +0000-->
+                                </date>
+                                <locale key="locale" localeIdentifier="zh-Hans"/>
+                            </datePicker>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="erb-BW-xzM" secondAttribute="trailing" id="3DQ-1x-14u"/>
+                            <constraint firstAttribute="trailing" secondItem="xO7-pk-UIs" secondAttribute="trailing" id="A0l-qq-K7I"/>
+                            <constraint firstItem="xO7-pk-UIs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AJ6-xu-3EG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xO7-pk-UIs" secondAttribute="bottom" id="bux-Ul-6ms"/>
+                            <constraint firstItem="erb-BW-xzM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kDY-cF-XOy"/>
+                            <constraint firstItem="xO7-pk-UIs" firstAttribute="top" secondItem="erb-BW-xzM" secondAttribute="bottom" id="uwO-di-cEy"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="datePicker" destination="erb-BW-xzM" id="V6d-7v-Vu1"/>
+                        <outlet property="timeLabel" destination="bIw-ys-lMf" id="OiM-J4-jJj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163.5" y="327.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="00" width="899" height="597"/>
+    </resources>
+</document>
